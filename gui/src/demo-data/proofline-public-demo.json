@@ -1,0 +1,41 @@
+{
+  "fictional": true,
+  "notice": "Every person, employer, role, metric, and outcome in this demo is fictional.",
+  "candidate": {
+    "displayName": "Sascha Linden",
+    "location": "Utrecht, Netherlands",
+    "headline": "Architecture and integration leader",
+    "summary": "Sascha is a fictional, gender-neutral European technology leader used only to demonstrate a reviewable application-planning workflow.",
+    "strengths": ["Platform architecture", "Enterprise integration", "Technical leadership", "Delivery governance"]
+  },
+  "vacancies": [
+    {
+      "id": "aurora-platform",
+      "company": "Aurora Relay",
+      "title": "Platform Architecture Lead",
+      "workMode": "Hybrid · Rotterdam",
+      "summary": "Set platform direction across partner integrations and delivery teams.",
+      "signals": ["platform", "integration", "leadership"],
+      "gap": "Cloud operations depth is useful but not required."
+    },
+    {
+      "id": "lattice-product",
+      "company": "Lattice & Loom",
+      "title": "Technical Product Architect",
+      "workMode": "Remote · EU",
+      "summary": "Shape product architecture for workflow automation used by enterprise teams.",
+      "signals": ["architecture", "product", "integration"],
+      "gap": "Commercial discovery experience should be explored in interview."
+    },
+    {
+      "id": "harbor-delivery",
+      "company": "Harborlight Works",
+      "title": "Engineering Delivery Manager",
+      "workMode": "Hybrid · Amsterdam",
+      "summary": "Guide cross-functional delivery for a data-rich logistics platform.",
+      "signals": ["leadership", "delivery", "platform"],
+      "gap": "The role asks for direct people-management evidence."
+    }
+  ]
+}
+

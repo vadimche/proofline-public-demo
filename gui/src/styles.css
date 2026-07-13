@@ -1,0 +1,60 @@
+:root {
+  color: #18313d;
+  background: #f4f7f6;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, input:focus-visible { outline: 3px solid #efae55; outline-offset: 3px; }
+
+.demo-shell { width: min(1120px, calc(100% - 32px)); margin: 0 auto; padding: 72px 0 88px; }
+.hero { max-width: 760px; margin-bottom: 32px; }
+.brand, .eyebrow { margin: 0; color: #18736d; font-size: .78rem; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
+.brand span { color: #e58c2d; }
+h1, h2, p { margin-top: 0; }
+h1 { max-width: 720px; margin: 10px 0 18px; color: #102a34; font-size: clamp(2.7rem, 7vw, 5.7rem); line-height: .98; letter-spacing: -.06em; }
+h2 { margin-bottom: 8px; color: #102a34; font-size: clamp(1.42rem, 3vw, 2rem); letter-spacing: -.035em; }
+.hero-copy { max-width: 660px; color: #526770; font-size: 1.08rem; line-height: 1.6; }
+.notice { margin-bottom: 18px; border-left: 4px solid #e58c2d; background: #fff8ef; padding: 15px 18px; color: #66411a; line-height: 1.5; }
+.card { margin: 18px 0; border: 1px solid #dce7e5; border-radius: 20px; background: #fff; padding: clamp(22px, 4vw, 38px); box-shadow: 0 14px 38px rgba(35, 72, 76, .07); }
+.profile, .score-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(260px, .7fr); gap: 34px; align-items: center; }
+.muted { color: #5e747b; }
+.profile p:last-child { max-width: 620px; line-height: 1.6; }
+.strengths { display: flex; flex-wrap: wrap; gap: 9px; margin: 0; padding: 0; list-style: none; }
+.strengths li { border-radius: 999px; background: #e5f2ee; padding: 8px 12px; color: #12625e; font-size: .89rem; font-weight: 700; }
+.vacancy-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.vacancy { display: grid; min-height: 172px; gap: 10px; border: 1px solid #cfdfdc; border-radius: 14px; background: #fff; padding: 18px; text-align: left; color: inherit; transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }
+.vacancy:hover { transform: translateY(-2px); border-color: #28827b; }
+.vacancy.selected { border-color: #0f6c66; box-shadow: inset 0 0 0 2px #0f6c66; background: #f2faf7; }
+.vacancy strong { color: #102a34; line-height: 1.24; }
+.vacancy span, .vacancy small { color: #597078; line-height: 1.4; }
+.vacancy small { font-size: .86rem; }
+fieldset { margin: 24px 0 0; border: 0; padding: 0; }
+legend { margin-bottom: 8px; font-weight: 750; }
+.toggle { display: inline-flex; align-items: center; gap: 8px; margin: 8px 14px 0 0; border-radius: 999px; background: #f1f6f5; padding: 8px 11px; color: #28454c; }
+.toggle input { width: 17px; height: 17px; accent-color: #14756d; }
+.score-panel { border-radius: 18px; background: #123d4b; padding: 30px; color: #fff; }
+.score-panel .eyebrow { color: #b5e8d7; }
+.score { margin: 10px 0 2px; line-height: .9; }
+.score strong { font-size: 5.2rem; letter-spacing: -.08em; }
+.score span { margin-left: 5px; color: #bcd0d1; font-weight: 700; }
+.score-label { margin-bottom: 18px; font-weight: 800; }
+.formula { border-top: 1px solid rgba(255,255,255,.23); margin-bottom: 0; padding-top: 15px; color: #d5e4e4; font-size: .86rem; line-height: 1.45; }
+.plan ol { max-width: 780px; padding-left: 1.3rem; }
+.plan li { margin: 13px 0; color: #718287; line-height: 1.5; }
+.plan li.complete { color: #12625e; font-weight: 750; }
+.primary { border: 0; border-radius: 10px; background: #13736b; padding: 12px 16px; color: #fff; font-weight: 800; transition: background .15s ease; }
+.primary:hover { background: #0c5e58; }
+.result { margin: 18px 0 0; border-radius: 10px; background: #eaf6f1; padding: 14px; color: #07574f; line-height: 1.5; }
+
+@media (max-width: 760px) {
+  .demo-shell { width: min(100% - 24px, 1120px); padding-top: 42px; }
+  .profile, .score-grid, .vacancy-grid { grid-template-columns: 1fr; }
+  .vacancy { min-height: auto; }
+  .score-panel { max-width: 420px; }
+}
+
