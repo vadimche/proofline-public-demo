@@ -2,6 +2,7 @@
   "name": "proofline-public-demo",
   "version": "0.1.0",
   "private": false,
+  "license": "Apache-2.0",
   "type": "module",
   "description": "A fictional, browser-only ProofLine product demonstration.",
   "scripts": {
@@ -18,4 +19,3 @@
     "vite": "^6.0.0"
   }
 }
-
