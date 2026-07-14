@@ -1,22 +1,25 @@
 <template>
-  <div class="app-frame">
-    <aside class="sidebar" :class="{ open: menuOpen }">
-      <div class="wordmark"><span class="mark">P</span><span>ProofLine</span><small>application workspace</small></div>
-      <p class="demo-tag">Fictional interactive demo</p>
-      <nav aria-label="ProofLine demo navigation">
-        <p class="nav-label">Find work</p>
-        <button v-for="item in primaryNav" :key="item.id" :class="{ active: screen === item.id }" @click="go(item.id)"><span>{{ item.icon }}</span>{{ item.label }}</button>
-        <p class="nav-label">Apply</p>
-        <button v-for="item in applyNav" :key="item.id" :class="{ active: screen === item.id }" @click="go(item.id)"><span>{{ item.icon }}</span>{{ item.label }}</button>
-        <p class="nav-label">My setup</p>
-        <button v-for="item in setupNav" :key="item.id" :class="{ active: screen === item.id }" @click="go(item.id)"><span>{{ item.icon }}</span>{{ item.label }}</button>
-      </nav>
-      <button class="reset" @click="resetDemo">↺ Reset fictional demo</button>
-    </aside>
-    <div class="app-main">
-      <header class="topbar"><button class="mobile-menu" @click="menuOpen = !menuOpen">☰</button><div><strong>Sascha Linden</strong><span>{{ fixture.candidate.target }}</span></div><div class="header-status"><i></i> Browser-only demo</div></header>
-      <main>
-        <div class="demo-notice"><strong>Illustrative workspace.</strong> {{ fixture.notice }}</div>
+  <div class="public-demo-root">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="app-header">
+      <button class="mobile-menu-button public-menu" @click="menuOpen = !menuOpen" aria-label="Open navigation"><i class="pi pi-bars" /></button>
+      <div class="brand-block" aria-label="ProofLine">
+        <svg class="brand-logo" viewBox="0 0 48 48" role="img" aria-label="ProofLine logo"><defs><linearGradient id="prooflineMarkFill" x1="7" y1="6" x2="40" y2="42" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#0b6b63" /><stop offset=".58" stop-color="#123c55" /><stop offset="1" stop-color="#17223a" /></linearGradient></defs><path class="brand-logo-shell" d="M24 4.5c10.9 0 19.5 8.6 19.5 19.5S34.9 43.5 24 43.5 4.5 34.9 4.5 24 13.1 4.5 24 4.5Z" /><path class="brand-logo-orbit" d="M13.6 31.5c4.9 4.4 13.7 5.1 20.8-2.1" /><path class="brand-logo-monogram" d="M16 34V13.5h10.2c5.2 0 8.6 3 8.6 7.3 0 4.4-3.4 7.4-8.6 7.4H16" /><path class="brand-logo-line" d="M23.3 34.2 35.5 15" /></svg>
+        <span class="brand-copy"><span class="brand">ProofLine</span><span class="brand-subtitle">Application operations</span></span>
+      </div>
+      <div class="workspace-switch"><label class="context-field"><span>Current profile</span><select aria-label="Current fictional profile"><option>Sascha Linden — Architecture leadership</option></select></label></div>
+      <span class="public-demo-chip"><i class="pi pi-shield" /> Fictional browser-only demo</span>
+    </header>
+    <div class="operating-mode-banner operating-mode-static_demo"><strong>Demo mode.</strong><span>{{ fixture.notice }}</span></div>
+    <div class="app-shell">
+      <aside class="app-sidebar" :class="{ 'is-open': menuOpen }" aria-label="Primary navigation">
+        <button class="mobile-drawer-close" @click="menuOpen = false" aria-label="Close navigation"><i class="pi pi-times" /></button>
+        <div class="nav-section"><div class="nav-section-label">Find work</div><button v-for="item in primaryNav" :key="item.id" class="nav-link" :class="{ 'router-link-active': screen === item.id }" @click="go(item.id)"><i :class="item.icon" /><span>{{ item.label }}</span></button></div>
+        <div class="nav-section"><div class="nav-section-label">Apply</div><button v-for="item in applyNav" :key="item.id" class="nav-link" :class="{ 'router-link-active': screen === item.id }" @click="go(item.id)"><i :class="item.icon" /><span>{{ item.label }}</span></button></div>
+        <div class="nav-section"><div class="nav-section-label">My setup</div><button v-for="item in setupNav" :key="item.id" class="nav-link" :class="{ 'router-link-active': screen === item.id }" @click="go(item.id)"><i :class="item.icon" /><span>{{ item.label }}</span></button></div>
+        <div class="sidebar-footer-context"><button class="reset" @click="resetDemo"><i class="pi pi-refresh" /> Reset demo state</button></div>
+      </aside>
+      <main id="main-content" class="page">
 
         <section v-if="screen === 'today'" class="page">
           <div class="page-heading"><div><p class="eyebrow">Today</p><h1>Your application workspace</h1><p>See what needs a decision, prepare a reviewed application, and keep the next step visible.</p></div><button class="primary" @click="runScan">{{ scanning ? 'Refreshing opportunities…' : '↻ Simulate opportunity refresh' }}</button></div>
@@ -84,9 +87,9 @@
 import { computed, ref } from 'vue'
 import fixture from './demo-data/proofline-public-demo.json'
 
-const primaryNav = [{ id: 'today', label: 'Today', icon: '⌂' }, { id: 'leads', label: 'Leads', icon: '⌁' }, { id: 'jobs', label: 'Top jobs', icon: '▤' }]
-const applyNav = [{ id: 'packs', label: 'Pack Studio', icon: '▣' }, { id: 'compose', label: 'Compose', icon: '✎' }, { id: 'readiness', label: 'Readiness', icon: '◔' }, { id: 'track', label: 'Submit & track', icon: '↗' }, { id: 'activity', label: 'Activity report', icon: '◷' }]
-const setupNav = [{ id: 'setup', label: 'Materials & setup', icon: '▧' }, { id: 'profile', label: 'Profile & evidence', icon: '◉' }, { id: 'sources', label: 'Sources', icon: '⌘' }, { id: 'settings', label: 'Settings', icon: '⚙' }]
+const primaryNav = [{ id: 'today', label: 'Today', icon: 'pi pi-home' }, { id: 'leads', label: 'Leads', icon: 'pi pi-inbox' }, { id: 'jobs', label: 'Top jobs', icon: 'pi pi-list-check' }]
+const applyNav = [{ id: 'packs', label: 'Pack Studio', icon: 'pi pi-folder' }, { id: 'compose', label: 'Compose', icon: 'pi pi-pencil' }, { id: 'readiness', label: 'Readiness', icon: 'pi pi-gauge' }, { id: 'track', label: 'Submit & track', icon: 'pi pi-send' }, { id: 'activity', label: 'Activity report', icon: 'pi pi-chart-line' }]
+const setupNav = [{ id: 'setup', label: 'Materials & setup', icon: 'pi pi-file' }, { id: 'profile', label: 'Profile & evidence', icon: 'pi pi-user' }, { id: 'sources', label: 'Sources', icon: 'pi pi-sitemap' }, { id: 'settings', label: 'Settings', icon: 'pi pi-cog' }]
 const originalJobs = JSON.parse(JSON.stringify(fixture.jobs))
 const screen = ref('today'), menuOpen = ref(false), jobs = ref(JSON.parse(JSON.stringify(fixture.jobs))), selectedId = ref('aurora-platform'), expandedJob = ref(''), scanning = ref(false), toast = ref(''), selectedPart = ref('Application outline'), draftSaved = ref(false), evidenceMessage = ref('')
 const applications = ref(JSON.parse(JSON.stringify(fixture.applications)))
