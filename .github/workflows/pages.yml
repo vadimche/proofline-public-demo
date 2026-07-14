@@ -30,6 +30,8 @@ jobs:
       - run: npm --prefix gui ci
       - run: VITE_BASE_PATH=/${{ github.event.repository.name }}/ npm --prefix gui run build:public-demo
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: gui/dist
