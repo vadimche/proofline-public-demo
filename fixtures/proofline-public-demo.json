@@ -221,19 +221,19 @@
         "values": ["Netherlands", "EU remote"]
       },
       {
-        "id": "target_roles",
+        "id": "primary_roles",
         "group": "roles",
         "file": "fictional demo state",
         "values": ["Platform Architecture Lead", "Technical Product Architect"]
       },
       {
-        "id": "positive_keywords",
+        "id": "strong_positive_keywords",
         "group": "keywords",
         "file": "fictional demo state",
         "values": ["architecture", "integration", "platform"]
       },
       {
-        "id": "excluded_keywords",
+        "id": "excluded_terms",
         "group": "excluded",
         "file": "fictional demo state",
         "values": ["commission only"]
