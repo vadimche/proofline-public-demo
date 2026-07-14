@@ -1,0 +1,243 @@
+{
+  "fictional": true,
+  "notice": "Every person, employer, role, metric, and outcome in this demo is fictional.",
+  "candidate": {
+    "displayName": "Sascha Linden",
+    "location": "Utrecht, Netherlands",
+    "headline": "Architecture and integration leader",
+    "summary": "Sascha is a fictional European technology leader used to demonstrate how ProofLine turns a verified profile into a focused, reviewable application plan.",
+    "strengths": ["Platform architecture", "Enterprise integration", "Technical leadership", "Delivery governance"],
+    "experience": [
+      { "company": "Cedarline Systems", "role": "Principal Integration Architect", "focus": "Connected product, partner APIs, and distributed delivery teams." },
+      { "company": "Mosaic Harbour", "role": "Engineering Lead", "focus": "Modernised a multi-tenant operations platform with product and data teams." },
+      { "company": "Boreal Gridworks", "role": "Solution Architect", "focus": "Designed reliable integration services for regulated infrastructure workflows." }
+    ]
+  },
+  "vacancies": [
+    {
+      "id": "aurora-platform",
+      "company": "Aurora Relay",
+      "title": "Platform Architecture Lead",
+      "workMode": "Hybrid · Rotterdam",
+      "summary": "Set platform direction across partner integrations and delivery teams.",
+      "signals": ["platform", "integration", "leadership"],
+      "gap": "Cloud operations depth is useful but not required."
+    },
+    {
+      "id": "lattice-product",
+      "company": "Lattice & Loom",
+      "title": "Technical Product Architect",
+      "workMode": "Remote · EU",
+      "summary": "Shape product architecture for workflow automation used by enterprise teams.",
+      "signals": ["architecture", "product", "integration"],
+      "gap": "Commercial discovery experience should be explored in interview."
+    },
+    {
+      "id": "harbor-delivery",
+      "company": "Harborlight Works",
+      "title": "Engineering Delivery Manager",
+      "workMode": "Hybrid · Amsterdam",
+      "summary": "Guide cross-functional delivery for a data-rich logistics platform.",
+      "signals": ["leadership", "delivery", "platform"],
+      "gap": "The role asks for direct people-management evidence."
+    }
+  ],
+  "demoState": {
+    "workspace": {
+      "user_id": "demo",
+      "candidate_id": "sascha-linden",
+      "search_profile_id": "architecture-leadership"
+    },
+    "setupState": "ready",
+    "leads": [
+      {
+        "id": "lead-cedar",
+        "source_type": "pasted_text",
+        "source_category": "referral",
+        "company": "Cedar Systems",
+        "title": "Technical Portfolio Lead",
+        "location": "Remote · EU",
+        "status": "resolved",
+        "score": null,
+        "easy_apply": "unknown",
+        "notes": "Fictional referral lead",
+        "pasted_text": "Invented opportunity used only in this browser demo.",
+        "created_at": "2026-07-14"
+      },
+      {
+        "id": "lead-meridian",
+        "source_type": "career_url",
+        "source_category": "employer",
+        "company": "Meridian Loop",
+        "title": "Enterprise Platform Architect",
+        "location": "Utrecht · Hybrid",
+        "status": "scored",
+        "score": 74,
+        "easy_apply": "no",
+        "notes": "Fictional company watchlist lead",
+        "created_at": "2026-07-13",
+        "watchlist_added": true
+      }
+    ],
+    "packs": [
+      {
+        "pack_id": "pack-aurora-platform",
+        "job_id": "aurora-platform",
+        "company": "Aurora Relay",
+        "title": "Platform Architecture Lead",
+        "job_title": "Platform Architecture Lead",
+        "status": "drafted_awaiting_human_review",
+        "created_at": "2026-07-14"
+      }
+    ],
+    "applications": [
+      {
+        "application_id": "application-harbor",
+        "job_id": "harbor-delivery",
+        "pack_id": "pack-harbor-delivery",
+        "company": "Harborlight Works",
+        "job_title": "Engineering Delivery Manager",
+        "date_applied": "2026-07-10",
+        "application_channel": "company_site",
+        "current_status": "awaiting_response",
+        "next_action_date": "2026-07-18",
+        "contact_person_name": "",
+        "contact_person_role": "",
+        "contact_person_email": ""
+      }
+    ],
+    "applicationResponses": {
+      "application-harbor": [
+        {
+          "response_date": "2026-07-12",
+          "outcome": "acknowledged",
+          "subject": "Application received",
+          "notes": "Fictional acknowledgement for the browser-only demo."
+        }
+      ]
+    },
+    "voiceSamples": [
+      {
+        "file": "fictional-architecture-note.txt",
+        "genre": "professional",
+        "chars": 184,
+        "preview": "A concise fictional writing sample demonstrating reviewable technical communication."
+      }
+    ],
+    "uploads": [
+      {
+        "relative_path": "demo/cv/sascha-linden-fictional-cv.pdf",
+        "filename": "Sascha-Linden-fictional-CV.pdf",
+        "bucket": "cv",
+        "analysis_status": "completed",
+        "uploaded_at": "2026-07-12T10:00:00Z",
+        "analyzed_at": "2026-07-12T10:00:02Z"
+      },
+      {
+        "relative_path": "demo/writing/platform-decision-fictional.pdf",
+        "filename": "Platform-decision-fictional.pdf",
+        "bucket": "writing_samples",
+        "analysis_status": "completed",
+        "uploaded_at": "2026-07-12T10:01:00Z",
+        "analyzed_at": "2026-07-12T10:01:02Z"
+      }
+    ],
+    "sources": [
+      {
+        "id": "source-aurora",
+        "name": "Aurora Relay",
+        "career_page_url": "",
+        "source_category": "employer",
+        "workflow": {
+          "manual_intake": true,
+          "automated_discovery": false,
+          "automated_extraction": false,
+          "requires_user_saved_url": false
+        },
+        "scan_enabled": true,
+        "scan_priority": "high",
+        "adapter_id": "demo",
+        "ats_type": "custom",
+        "ats_board_slug": "",
+        "location_relevance": "Netherlands",
+        "notes": "Invented employer for the public demo."
+      },
+      {
+        "id": "source-lattice",
+        "name": "Lattice & Loom",
+        "career_page_url": "",
+        "source_category": "employer",
+        "workflow": {
+          "manual_intake": true,
+          "automated_discovery": false,
+          "automated_extraction": false,
+          "requires_user_saved_url": false
+        },
+        "scan_enabled": true,
+        "scan_priority": "medium",
+        "adapter_id": "demo",
+        "ats_type": "custom",
+        "ats_board_slug": "",
+        "location_relevance": "EU remote",
+        "notes": "Invented employer for the public demo."
+      }
+    ],
+    "learning": [
+      {
+        "id": "learning-1",
+        "status": "proposed",
+        "summary": "Give integration-leadership evidence slightly more weight",
+        "evidence": ["2 fictional reviewed decisions", "1 saved role"]
+      }
+    ],
+    "questions": [
+      {
+        "question_id": "question-1",
+        "question": "How is operational ownership shared between platform and product teams?",
+        "answer": "Use the interview to clarify decision rights and operational accountability.",
+        "notes": "Illustrative answer; review before use."
+      }
+    ],
+    "proposals": [
+      {
+        "proposal_id": "proposal-1",
+        "question": "Can direct cloud-operations ownership be supported?",
+        "reason": "The vacancy mentions operational depth but the fictional profile supports architecture rather than operations ownership.",
+        "draft_fact_claim": "Coordinated architecture decisions with platform operations stakeholders; direct operations ownership remains unverified.",
+        "category": "architecture",
+        "company": "Cedarline Systems",
+        "role": "Principal Integration Architect",
+        "period": "2021–2025",
+        "evidence_prompt": "Confirm scope with a person before accepting this as a fact.",
+        "status": "open",
+        "accepted_fact_id": ""
+      }
+    ],
+    "settings": [
+      {
+        "id": "preferred_locations",
+        "group": "region",
+        "file": "fictional demo state",
+        "values": ["Netherlands", "EU remote"]
+      },
+      {
+        "id": "target_roles",
+        "group": "roles",
+        "file": "fictional demo state",
+        "values": ["Platform Architecture Lead", "Technical Product Architect"]
+      },
+      {
+        "id": "positive_keywords",
+        "group": "keywords",
+        "file": "fictional demo state",
+        "values": ["architecture", "integration", "platform"]
+      },
+      {
+        "id": "excluded_keywords",
+        "group": "excluded",
+        "file": "fictional demo state",
+        "values": ["commission only"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "artifact_kind": "proofline-fictional-static-demo",
+  "fictional": true,
+  "base_path": "/proofline-public-demo/",
+  "fixture": "fixtures/proofline-public-demo.json",
+  "files": [
+    {
+      "path": "fixtures/proofline-public-demo.json",
+      "sha256": "ad8f36e1652a1ed16891263dd5d9c7695e15ce2efd79e12b94715bf2018dbff7",
+      "bytes": 8732
+    },
+    {
+      "path": "site/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "site/assets/index-BalX9_K6.css",
+      "sha256": "bcd607a65f7ca5e6cd2189ca2d618f431955c2e6fa8dd1b8629a4b26d91cba0e",
+      "bytes": 26152
+    },
+    {
+      "path": "site/assets/index-CKjaUVPT.js",
+      "sha256": "8757965c21151ab080d40aa8e2b1bf08d7e634ce74f29fee90c1dd045e411d00",
+      "bytes": 1519
+    },
+    {
+      "path": "site/assets/primeicons-C6QP2o4f.woff2",
+      "sha256": "9eea6e0bcb974ec568fdcb1eec182d3b5383a3a23899a690140b2c0167886882",
+      "bytes": 35148
+    },
+    {
+      "path": "site/assets/primeicons-DMOk5skT.eot",
+      "sha256": "987f23eadfa70c603276a71c3c975c8d0534d9c719d8a6e3d965005e7b93747b",
+      "bytes": 85156
+    },
+    {
+      "path": "site/assets/primeicons-Dr5RGzOO.svg",
+      "sha256": "36c54cecfca947a6913c96df884300ce14108c4d8cb1cb241969321342f890c9",
+      "bytes": 342525
+    },
+    {
+      "path": "site/assets/primeicons-MpK4pl85.ttf",
+      "sha256": "dc895fee9f3ce1b0eaf16b4b9fab20077fc2981e6c0b332e4c97c176832fc05b",
+      "bytes": 84980
+    },
+    {
+      "path": "site/assets/primeicons-WjwUDZjB.woff",
+      "sha256": "f5d1d2195e05b8085953aa7d50b2e77070cd1120e0100a8600771aa5ba11a01e",
+      "bytes": 85056
+    },
+    {
+      "path": "site/assets/public-demo-main-BDBgUkdJ.js",
+      "sha256": "50d7b5c363c0568f34a433a477827db7aebb8bd029bf2cb30a2bb3b5ac936e7d",
+      "bytes": 1625955
+    },
+    {
+      "path": "site/assets/public-demo-main-TF3pBaKs.css",
+      "sha256": "34190ba4a1527e176d32843e47456dc6c95e0e72878f477c3c1f9fa9f2959341",
+      "bytes": 27187
+    },
+    {
+      "path": "site/index.html",
+      "sha256": "6422e4b436a25742ea19c9286b45155d57b0125026e1594db16ffc11b25a4b55",
+      "bytes": 437
+    }
+  ]
+}
