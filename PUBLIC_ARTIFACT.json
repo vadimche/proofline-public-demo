@@ -16,8 +16,8 @@
       "bytes": 0
     },
     {
-      "path": "site/assets/index-CSgJgXlb.js",
-      "sha256": "09bc3f940d09dbaf07d4be4108c3ba3df3dd84fcb273db8eea7e9c273ad9a4e3",
+      "path": "site/assets/index-DuVHiYZQ.js",
+      "sha256": "8deae543b715f5d844b813765c61a20dd45b5a3dc0ddc972e88e04c74fdf737a",
       "bytes": 1519
     },
     {
@@ -51,14 +51,14 @@
       "bytes": 85056
     },
     {
-      "path": "site/assets/public-demo-main-jLzMgs7G.js",
-      "sha256": "12bc023c61981379e30767c64cef8a7d26154b096e9e6132ac6e71aa3835743f",
-      "bytes": 1640445
+      "path": "site/assets/public-demo-main-DbP0e3Cu.js",
+      "sha256": "ee0bbdb6a437614743ddbe2ecc0acfd623d059a986d863ba4deb1603c41a588b",
+      "bytes": 1703553
     },
     {
-      "path": "site/assets/public-demo-main-tuYvtPWv.css",
-      "sha256": "162fe9ab73e15ab29629f5d02a063f739f08177eee74ce66c658cb4ae76ced3e",
-      "bytes": 27660
+      "path": "site/assets/public-demo-main-DPrtPEmf.css",
+      "sha256": "35846d2ff4434ffffca4ee4ee5434c5bbfe2c54b80203c7bc266caf2dbbe6f4d",
+      "bytes": 29405
     },
     {
       "path": "site/favicon.svg",
@@ -67,7 +67,7 @@
     },
     {
       "path": "site/index.html",
-      "sha256": "f64f3f76fe194e53dcadba6b4844f8381c12020db36d7c47d8600e5d1109a729",
+      "sha256": "8ce23359e0181745bee0959e2ec1535ab8cf35062a37f3a6b4c844b4d577ab75",
       "bytes": 1150
     }
   ]
